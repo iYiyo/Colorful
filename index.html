@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Yiyo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="shorcut icon" href="img/logo3.png">
+  </head>
+  <body>
+    <div class="container">
+      <div class="bg">
+        <!-- HEADER -->
+        <header class="header">
+          <div class="margin-left logo">
+            <a href="index.html"><h4>R<span>J</span></h4></a>
+          </div>
+          <nav class="normal" id="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="">Acerca</a></li>
+              <li><a target="_blank" href="https://github.com/iYiyo">Portafolio</a></li>
+            </ul>
+          </nav>
+          <div class="margin-right menu-container">
+            <input type="search" name="search" value="" placeholder="Busqueda">
+            <span class="menu" id="burger-menu"></span>
+          </div>
+        </header>
+        <!-- HEADER -->
+        <!-- COVER -->
+        <section class="cover">
+          <h2>Welcome</h2>
+          <p>Te doy la bienvenida a mi pequeño rincón</p>
+        </section>
+        <!-- COVER -->
+      </div>
+      <!-- PRINCIPAL -->
+      <section class="principal">
+        <div class="about-me">
+          <img src="img/yo1.jpg" alt="Photo">
+          <h1>Rafael J. Sanchez</h1>
+          <div class="redes">
+            <div class="redes-firts">
+              <a class="twitter" target="_blank" href="https://twitter.com/iYiiyoo"></a>
+              <a class="facebook" target="_blank" href="https://www.facebook.com/Rafael-Jair-Sanchez-259328777965034/"></a>
+              <a class="instagram" target="_blank" href="https://www.instagram.com/iyiiyoo/"></a>
+              <a class="youtube" target="_blank" href="https://www.youtube.com/channel/UCgmwKy8JXPIyaji9GrXn52g"></a>
+            </div>
+            <div class="redes-second">
+              <a class="github" target="_blank" href="https://github.com/iYiyo"></a>
+              <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/iyiyo/"></a>
+            </div>
+          </div>
+        </div>
+        <div class="news">
+          <h2>Ultimos Post</h2>
+          <div class="notice">
+            <div class="contenedor-img">
+              <a href="#">
+                <img src="img/noticia1.jpg" alt="notice" width="300px">
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <h3>Adventure Time</h3>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="notice">
+            <div class="contenedor-img">
+              <a href="#">
+                <img src="img/noticia1.jpg" alt="notice" width="300px">
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <h3>Adventure Time</h3>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="notice">
+            <div class="contenedor-img">
+              <a href="#">
+                <img src="img/noticia1.jpg" alt="notice" width="300px">
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <h3>Adventure Time</h3>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="notice">
+            <div class="contenedor-img">
+              <a href="#">
+                <img src="img/noticia1.jpg" alt="notice" width="300px">
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <h3>Adventure Time</h3>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PRINCIPAL -->
+    </div>
+  </body>
+  <script async src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script async>
+    WebFont.load({
+      google: {
+        families: ['Prosto+One', 'Roboto:400,700']
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    var $burgerMenu = document.getElementById('burger-menu');
+    var $menu = document.getElementById('menu');
+
+    $burgerMenu.addEventListener("click", activate);
+
+    function activate() {
+      $menu.classList.toggle('active')
+      $burgerMenu.classList.toggle("close")
+    }
+  </script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</html>

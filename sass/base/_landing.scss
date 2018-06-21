@@ -1,0 +1,24 @@
+html{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: $color-bg;
+}
+
+.bg{
+  background: $cover-bg;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media only screen and (max-width: 956px){
+    background-position: 38%;
+  }
+
+  @media screen and (max-width: 600px){
+    background-position: center;
+  }
+}

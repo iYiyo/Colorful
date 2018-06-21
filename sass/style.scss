@@ -1,0 +1,21 @@
+// variables and icons
+@import "lib/_var.scss";
+@import "lib/_icons";
+
+  // HTML STRUCTURE
+@import "base/_landing.scss";
+@import "base/_h.scss";
+@import "base/_list.scss";
+@import "base/_links.scss";
+@import "base/_input.scss";
+
+// LAYOUT
+@import "layout/_grid.scss";
+@import "layout/_header.scss";
+@import "layout/_cover";
+@import "layout/_principal.scss";
+
+
+// ANIMATIONS
+@import "components/_animations";
+@import "components/_utilitis.scss";

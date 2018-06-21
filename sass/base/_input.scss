@@ -1,0 +1,19 @@
+input{
+  padding: 4px;
+  border-radius: 6px;
+  border: solid 2px $color-aqua;
+  &:focus{
+    outline: 0px;
+    border: solid 2px $color-red;
+    &::placeholder{
+      color: $color-red;
+    }
+  }
+  @media screen and (max-width: 860px){
+    display: none;
+  }
+}
+
+::placeholder{
+  color: $color-sky;
+}
